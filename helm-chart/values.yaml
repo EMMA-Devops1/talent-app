@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: emmadevops01/talent-app
+  repository: emmadevops01/talent-app:latest
   pullPolicy: IfNotPresent
 
 ingress:
