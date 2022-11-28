@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: talent-app
-          image: emmadevops01/talent-app:latest
+          image: emmadevops02/frontend-app
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 1004

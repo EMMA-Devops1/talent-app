@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: emmadevops01/talent-app:latest
+  repository: frontend-app
   pullPolicy: IfNotPresent
 
 ingress:
@@ -12,7 +12,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"  
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 1004
   targetport: 1004
   name: talent
