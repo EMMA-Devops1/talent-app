@@ -1,0 +1,21 @@
+replicaCount: 1
+
+image:
+  repository: emmadevops01/talent-app
+  pullPolicy: IfNotPresent
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"  
+
+service:
+  type: ClusterIP
+  port: 1004
+  targetport: 1004
+  name: talent
+
+conatiner:
+  name: talent-app
